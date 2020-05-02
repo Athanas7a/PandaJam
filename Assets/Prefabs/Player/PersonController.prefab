@@ -1312,7 +1312,6 @@ GameObject:
   - component: {fileID: 7606143075779103369}
   - component: {fileID: 7606143075785452015}
   - component: {fileID: 7606143075785411019}
-  - component: {fileID: 7606143076599538569}
   m_Layer: 0
   m_Name: PersonController
   m_TagString: Untagged
@@ -1418,18 +1417,6 @@ MonoBehaviour:
   m_MoveSpeedMultiplier: 1
   m_AnimSpeedMultiplier: 1
   m_GroundCheckDistance: 0.3
---- !u!114 &7606143076599538569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7606143075774218889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba2916b3fb5151b478c47b8d0e4b0864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7606143075774219245
 GameObject:
   m_ObjectHideFlags: 0
