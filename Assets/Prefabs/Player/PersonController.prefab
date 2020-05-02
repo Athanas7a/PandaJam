@@ -1313,6 +1313,7 @@ GameObject:
   - component: {fileID: 7606143075785452015}
   - component: {fileID: 7606143075785411019}
   - component: {fileID: 7606143076599538569}
+  - component: {fileID: 1064023006}
   m_Layer: 0
   m_Name: PersonController
   m_TagString: Untagged
@@ -1430,6 +1431,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba2916b3fb5151b478c47b8d0e4b0864, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bonusHealth: 20
+--- !u!114 &1064023006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606143075774218889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2001011e3248d774d99f407a57acddee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  healthBar: {fileID: 0}
 --- !u!1 &7606143075774219245
 GameObject:
   m_ObjectHideFlags: 0
