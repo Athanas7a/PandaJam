@@ -12,9 +12,7 @@ GameObject:
   - component: {fileID: 1813724514227587047}
   - component: {fileID: 1813724514215059697}
   - component: {fileID: 1813724514222730401}
-  - component: {fileID: 1813724514224738247}
-  - component: {fileID: 1813724514224779235}
-  - component: {fileID: 8117129207486981678}
+  - component: {fileID: 6852782178548828679}
   m_Layer: 0
   m_Name: PandaController
   m_TagString: Untagged
@@ -86,7 +84,7 @@ CapsuleCollider:
   m_Height: 1.6
   m_Direction: 1
   m_Center: {x: 0, y: 0.8, z: 0}
---- !u!114 &1813724514224738247
+--- !u!114 &6852782178548828679
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,41 +93,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1813724514218173601}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
+  m_Script: {fileID: 11500000, guid: 4921873879bab5840881ed50dd6bcf8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1813724514224779235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1813724514218173601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce7a80d520cacc042b5fe14f373d8173, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MovingTurnSpeed: 360
-  m_StationaryTurnSpeed: 180
-  m_JumpPower: 6
-  m_GravityMultiplier: 2
-  m_RunCycleLegOffset: 0.2
-  m_MoveSpeedMultiplier: 5
-  m_AnimSpeedMultiplier: 1
-  m_GroundCheckDistance: 0.3
---- !u!114 &8117129207486981678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1813724514218173601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16b994741c4eef04685b400030be630a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  speed: 2
+  forceJump: 5
 --- !u!1001 &785706160472822209
 PrefabInstance:
   m_ObjectHideFlags: 0
