@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CollectionItems : MonoBehaviour
 {
+    public int bonusHealth;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,26 +17,22 @@ public class CollectionItems : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag.Equals("Pill"))
-        {
-            Destroy(collision.gameObject);
-            print("Pill collected");
-        }
+    private void OnTriggerEnter(Collider collision)
+    {        
 
         if (collision.gameObject.tag.Equals("Food"))
         {
+            GetComponent<PlayerBehaviour>().AddHealth(bonusHealth);//healthBar.addHealth(20);
             Destroy(collision.gameObject);
             print("Food collected");
         }
-
+        /*
         if (collision.gameObject.tag.Equals("Speedup"))
         {
             Destroy(collision.gameObject);
             print("Speed booster collected");
             // TOADD: speed up + down
-        }
+        }*/
 
 
     }
