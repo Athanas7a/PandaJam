@@ -14,8 +14,13 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //print(GameObject.FindGameObjectWithTag("ground").GetComponent);
+       /* if (gameObject.transform.position.y - gameObject.transform.parent.position.y < pos )
+        {
+            pos += gameObject.transform.position.y - gameObject.transform.parent.position.y;
+        }*/
         //working success as child
-       transform.position = new Vector3(transform.position.x, pos, transform.position.z);
+       transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 
     }
    
