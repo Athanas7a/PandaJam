@@ -55,8 +55,8 @@ public class PlayerBehaviour : MonoBehaviour
     private void Dead() {
         if (healthBar.slider.value <= 0)
         {
-            gameObject.GetComponent<ThirdPersonUserControl>().enabled = false;
-            gameObject.GetComponent<ThirdPersonCharacter>().enabled = false;
+ //           gameObject.GetComponent<ThirdPersonUserControl>().enabled = false;
+ //           gameObject.GetComponent<ThirdPersonCharacter>().enabled = false;
             gameObject.GetComponent<Animator>().enabled = false;
             GameOverSequence();
             print("DEAD");            
@@ -68,16 +68,6 @@ public class PlayerBehaviour : MonoBehaviour
             GameObject.Find("GameManager").GetComponent<GameManager>().GameOver();
             _gameoverText.gameObject.SetActive(true);
             _restartText.gameObject.SetActive(true);
-            StartCoroutine(GameOverFlickerRoutine());
          }
-    IEnumerator GameOverFlickerRoutine()
-    {
-        while (true)
-        {
-            _gameoverText.text = "GAME OVER";
-            yield return new WaitForSeconds(0.5f);
-            _gameoverText.text = "";
-            yield return new WaitForSeconds(0.5f);
-        }
-    }
+
 }
