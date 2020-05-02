@@ -20,6 +20,7 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField]
     private Text _restartText;
 
+
     // Start is called before the first frame update
     void Start()
     {

@@ -114,6 +114,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   healthBar: {fileID: 0}
+  _gameoverText: {fileID: 0}
+  _restartText: {fileID: 0}
 --- !u!114 &8556964458455288581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba2916b3fb5151b478c47b8d0e4b0864, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bonusHealth: 0
+  bonusHealth: 20
 --- !u!1001 &785706160472822209
 PrefabInstance:
   m_ObjectHideFlags: 0
