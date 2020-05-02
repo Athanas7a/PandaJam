@@ -141,6 +141,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   healthBar: {fileID: 0}
+  _gameoverText: {fileID: 0}
+  _restartText: {fileID: 0}
 --- !u!1001 &6019091652643418411
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -148,6 +150,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4631068993986621903}
     m_Modifications:
+    - target: {fileID: -7780734103960978560, guid: 0ca7c973ab63a964f87fe3fa258287ab,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d3ed37aa7f786c541b1ffe33442b898d, type: 2}
     - target: {fileID: -4216859302048453862, guid: 0ca7c973ab63a964f87fe3fa258287ab,
         type: 3}
       propertyPath: m_LocalPosition.x
