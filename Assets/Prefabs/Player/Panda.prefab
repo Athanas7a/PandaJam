@@ -1,5 +1,17 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &615481926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105921346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a67f5298dc8bea446b3976f57a310218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4631068993986331723
 GameObject:
   m_ObjectHideFlags: 0
@@ -13,6 +25,8 @@ GameObject:
   - component: {fileID: 4631068993983152155}
   - component: {fileID: 4631068993974438987}
   - component: {fileID: 845892847}
+  - component: {fileID: 3779382991387496385}
+  - component: {fileID: 929722714156767097}
   m_Layer: 0
   m_Name: Panda
   m_TagString: Untagged
@@ -100,18 +114,33 @@ MonoBehaviour:
   speed: 5
   speedRot: 3
   forceJump: 350
---- !u!114 &615481926
+--- !u!114 &3779382991387496385
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2105921346}
+  m_GameObject: {fileID: 4631068993986331723}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a67f5298dc8bea446b3976f57a310218, type: 3}
+  m_Script: {fileID: 11500000, guid: ba2916b3fb5151b478c47b8d0e4b0864, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bonusHealth: 20
+--- !u!114 &929722714156767097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4631068993986331723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2001011e3248d774d99f407a57acddee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  healthBar: {fileID: 0}
 --- !u!1001 &6019091652643418411
 PrefabInstance:
   m_ObjectHideFlags: 0

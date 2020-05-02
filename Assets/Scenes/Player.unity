@@ -370,6 +370,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin
       objectReference: {fileID: 0}
+    - target: {fileID: 8506699568545520203, guid: dfc507019d455f9449c022c58243804b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pill
+      objectReference: {fileID: 0}
     - target: {fileID: 8506699568545520207, guid: dfc507019d455f9449c022c58243804b,
         type: 3}
       propertyPath: m_LocalPosition.x
