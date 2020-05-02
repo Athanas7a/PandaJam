@@ -25,8 +25,14 @@ public class Character_Controller : MonoBehaviour
         inputVector.z = Input.GetAxis("Vertical");
 
         if (Input.GetKeyDown(KeyCode.Space)){
-            print("JUMP!");
+            
             GetComponent<Rigidbody>().AddForce(Vector3.up * forceJump, ForceMode.Force);
+
+            animator.SetBool("Jump", true);
+        }
+        else
+        {
+            animator.SetBool("Jump", false);
         }
 
         if(inputVector.magnitude > 0.2)
