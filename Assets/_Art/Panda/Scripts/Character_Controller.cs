@@ -10,6 +10,7 @@ public class Character_Controller : MonoBehaviour
     public float speed = 2;
     public float forceJump = 5;
     private Animator animator;
+    private bool isGround;
 
 
     // Start is called before the first frame update
@@ -24,7 +25,7 @@ public class Character_Controller : MonoBehaviour
         inputVector.x = Input.GetAxis("Horizontal");
         inputVector.z = Input.GetAxis("Vertical");
 
-        if (Input.GetKeyDown(KeyCode.Space)){
+        if (Input.GetKeyDown(KeyCode.Space) && isGround){
             
             GetComponent<Rigidbody>().AddForce(Vector3.up * forceJump, ForceMode.Force);
 
@@ -51,5 +52,21 @@ public class Character_Controller : MonoBehaviour
         }
 
        //transform.forward = inputVector;
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag.Equals("ground"))
+        {
+            isGround = true;
+        }
+    }
+
+    public void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag.Equals("ground"))
+        {
+            isGround = false;
+        }
     }
 }

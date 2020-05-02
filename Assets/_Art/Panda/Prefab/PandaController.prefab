@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1813724514227587047}
   - component: {fileID: 1813724514215059697}
   - component: {fileID: 1813724514222730401}
-  - component: {fileID: 1813724514224738247}
-  - component: {fileID: 1813724514224779235}
-  - component: {fileID: 8117129207486981678}
+  - component: {fileID: 929431739549871507}
+  - component: {fileID: 1716097176259647832}
+  - component: {fileID: 8556964458455288581}
   m_Layer: 0
   m_Name: PandaController
   m_TagString: Untagged
@@ -86,7 +86,7 @@ CapsuleCollider:
   m_Height: 1.6
   m_Direction: 1
   m_Center: {x: 0, y: 0.8, z: 0}
---- !u!114 &1813724514224738247
+--- !u!114 &929431739549871507
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,10 +95,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1813724514218173601}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
+  m_Script: {fileID: 11500000, guid: 4921873879bab5840881ed50dd6bcf8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1813724514224779235
+  speed: 3
+  forceJump: 300
+--- !u!114 &1716097176259647832
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,18 +109,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1813724514218173601}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce7a80d520cacc042b5fe14f373d8173, type: 3}
+  m_Script: {fileID: 11500000, guid: 2001011e3248d774d99f407a57acddee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MovingTurnSpeed: 360
-  m_StationaryTurnSpeed: 180
-  m_JumpPower: 6
-  m_GravityMultiplier: 2
-  m_RunCycleLegOffset: 0.2
-  m_MoveSpeedMultiplier: 5
-  m_AnimSpeedMultiplier: 1
-  m_GroundCheckDistance: 0.3
---- !u!114 &8117129207486981678
+  maxHealth: 100
+  healthBar: {fileID: 0}
+  _gameoverText: {fileID: 0}
+  _restartText: {fileID: 0}
+--- !u!114 &8556964458455288581
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,9 +125,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1813724514218173601}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16b994741c4eef04685b400030be630a, type: 3}
+  m_Script: {fileID: 11500000, guid: ba2916b3fb5151b478c47b8d0e4b0864, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bonusHealth: 20
 --- !u!1001 &785706160472822209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -137,6 +136,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1813724514217890085}
     m_Modifications:
+    - target: {fileID: -7780734103960978560, guid: 0ca7c973ab63a964f87fe3fa258287ab,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d3ed37aa7f786c541b1ffe33442b898d, type: 2}
     - target: {fileID: -4216859302048453862, guid: 0ca7c973ab63a964f87fe3fa258287ab,
         type: 3}
       propertyPath: m_LocalPosition.x

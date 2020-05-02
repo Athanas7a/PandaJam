@@ -8,6 +8,7 @@ TagManager:
   - Goal
   - Pill
   - Speedup
+  - ground
   layers:
   - Default
   - TransparentFX
