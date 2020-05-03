@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73880b696c4a9c74ab8f586f574ca4cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  food: {fileID: 4153827564481914797, guid: 4fea921548538fb4397d1d05b2370cd2, type: 3}
+  food: {fileID: 7378391606822945431, guid: 2c414142686406647801eedac695ab82, type: 3}
   pointFood:
   - {fileID: 6761307462555409906}
   - {fileID: 6761307461497061846}
