@@ -12,7 +12,7 @@ public class PlayerBehaviour : MonoBehaviour
     private float currentHealth;
 
     private float damage = 0;
-    private float speedDamage = 0.05f;
+    private float speedDamage = 0.01f;
     public HealthBar healthBar;
 
     [SerializeField]
@@ -67,8 +67,6 @@ public class PlayerBehaviour : MonoBehaviour
     private void Dead() {
         if (healthBar.slider.value <= 0)
         {
- //           gameObject.GetComponent<ThirdPersonUserControl>().enabled = false;
- //           gameObject.GetComponent<ThirdPersonCharacter>().enabled = false;
             gameObject.GetComponent<Animator>().enabled = false;
             GameOverSequence();
             print("DEAD");            
@@ -85,10 +83,10 @@ public class PlayerBehaviour : MonoBehaviour
             animator.SetBool("Run", false);
 
         if (Input.GetKey(KeyCode.LeftArrow))
-            transform.Rotate(Vector3.down, speedRot);
+            transform.Rotate(Vector3.down, speedRot * Time.smoothDeltaTime);
 
         if (Input.GetKey(KeyCode.RightArrow))
-            transform.Rotate(Vector3.up, speedRot);
+            transform.Rotate(Vector3.up, speedRot * Time.smoothDeltaTime);
 
 
         if (Input.GetKeyDown(KeyCode.Space) && isGround)
