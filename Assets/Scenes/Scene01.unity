@@ -192,21 +192,20 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 1000000000
       objectReference: {fileID: 0}
+    - target: {fileID: 2353683730202830882, guid: 8adb433e9580e464bae80763fdff6473,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3779382991387496385, guid: 8adb433e9580e464bae80763fdff6473,
         type: 3}
       propertyPath: bonusHealth
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4631068993979016973, guid: 8adb433e9580e464bae80763fdff6473,
         type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
-        'mixamorig:LeftHandIndex1'\n\tTransform 'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform
-        'mixamorig:RightArm'\n\tTransform 'mixamorig:LeftLeg'\n\tTransform 'mixamorig:LeftShoulder'\n\tTransform
-        'mixamorig:RightHandIndex3'\n\tTransform 'mixamorig:RightFoot'\n\tand more
-        ...\n\tFrom animation clip 'mixamo.com'"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4631068993983152155, guid: 8adb433e9580e464bae80763fdff6473,
         type: 3}
@@ -256,7 +255,7 @@ PrefabInstance:
     - target: {fileID: 4631068993986621903, guid: 8adb433e9580e464bae80763fdff6473,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4631068993986621903, guid: 8adb433e9580e464bae80763fdff6473,
         type: 3}
@@ -340,7 +339,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &965126787 stripped
 MonoBehaviour:
@@ -475,7 +474,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b84e2733a55e8394aafbb97039cfa549, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -745,7 +744,7 @@ PrefabInstance:
     - target: {fileID: 5734099916875547674, guid: b840b08f1e582cc46b35b76b54db59b7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5734099916875547674, guid: b840b08f1e582cc46b35b76b54db59b7,
         type: 3}
@@ -824,7 +823,7 @@ PrefabInstance:
     - target: {fileID: 8271913914540731044, guid: 0e7ef5fb3fbfd4545adbf2c5a068d235,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8271913914540731044, guid: 0e7ef5fb3fbfd4545adbf2c5a068d235,
         type: 3}
@@ -853,7 +852,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2090755062}
   - component: {fileID: 2090755061}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Post Process Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -936,7 +935,7 @@ PrefabInstance:
     - target: {fileID: 1504344739295113797, guid: 20f8c58d7a8131542af572a9818a7cb1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1504344739295113797, guid: 20f8c58d7a8131542af572a9818a7cb1,
         type: 3}
@@ -1070,7 +1069,7 @@ PrefabInstance:
     - target: {fileID: 6761307461330331824, guid: f7abaddb70dca0544b547d4004730175,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6761307461330331824, guid: f7abaddb70dca0544b547d4004730175,
         type: 3}
@@ -1235,7 +1234,7 @@ PrefabInstance:
     - target: {fileID: 987514461541893807, guid: 7a47842079539994bb9651ff680e5fab,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 987514461541893807, guid: 7a47842079539994bb9651ff680e5fab,
         type: 3}
