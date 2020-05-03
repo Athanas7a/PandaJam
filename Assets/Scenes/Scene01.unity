@@ -175,7 +175,7 @@ PrefabInstance:
     - target: {fileID: 929722714156767097, guid: 8adb433e9580e464bae80763fdff6473,
         type: 3}
       propertyPath: speedRot
-      value: 25
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 929722714156767097, guid: 8adb433e9580e464bae80763fdff6473,
         type: 3}
@@ -190,7 +190,7 @@ PrefabInstance:
     - target: {fileID: 929722714156767097, guid: 8adb433e9580e464bae80763fdff6473,
         type: 3}
       propertyPath: maxHealth
-      value: 1000000000
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2353683730202830882, guid: 8adb433e9580e464bae80763fdff6473,
         type: 3}

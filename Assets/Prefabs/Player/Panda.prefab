@@ -128,9 +128,9 @@ MonoBehaviour:
   _gameoverText: {fileID: 0}
   _restartText: {fileID: 0}
   speed: 20
-  speedRot: 30
+  speedRot: 50
   forceJump: 350
-  characterRotationSpeed: 0
+  characterRotationSpeed: 200
 --- !u!1001 &6019091652643418411
 PrefabInstance:
   m_ObjectHideFlags: 0
