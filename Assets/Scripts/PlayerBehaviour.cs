@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityStandardAssets.Characters.ThirdPerson;
 
@@ -101,8 +102,16 @@ public class PlayerBehaviour : MonoBehaviour
             //gameObject.GetComponent<Animator>().enabled = false;
             GameOverSequence();
             animator.SetBool("Dead", true);
-            print("DEAD");            
+            print("DEAD");
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                SceneManager.LoadScene(0);
+            }
         }
+
+
+
     }
     private void Movement() 
     {
@@ -170,7 +179,19 @@ public class PlayerBehaviour : MonoBehaviour
             if (gameObject.transform.GetChild(0).localRotation.eulerAngles.y < 180)
                 gameObject.transform.GetChild(0).Rotate(Vector3.up * characterRotationSpeed * Time.smoothDeltaTime);
             else
+            {
                 animator.SetBool("Win", true);
+                _restartText.gameObject.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.R))
+                {
+                    SceneManager.LoadScene("Scene01");
+                }
+
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    SceneManager.LoadScene(0);
+                }
+            }
 
             print("Vicrtory");
         }
