@@ -785,6 +785,11 @@ PrefabInstance:
       propertyPath: m_DetailObjectDistance
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 6099828745813669357, guid: 0e7ef5fb3fbfd4545adbf2c5a068d235,
+        type: 3}
+      propertyPath: m_TreeBillboardDistance
+      value: 602
+      objectReference: {fileID: 0}
     - target: {fileID: 8271913914540731044, guid: 0e7ef5fb3fbfd4545adbf2c5a068d235,
         type: 3}
       propertyPath: m_LocalPosition.x

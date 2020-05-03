@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 4631068993979016973}
   - component: {fileID: 4631068993983152155}
   - component: {fileID: 4631068993974438987}
-  - component: {fileID: 845892847}
   - component: {fileID: 3779382991387496385}
   - component: {fileID: 929722714156767097}
   m_Layer: 0
@@ -99,21 +98,6 @@ CapsuleCollider:
   m_Height: 1.6
   m_Direction: 1
   m_Center: {x: 0, y: 0.8, z: 0}
---- !u!114 &845892847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4631068993986331723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bde9ccde5a4147a4f8f80ca091e7547b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  speedRot: 3
-  forceJump: 350
 --- !u!114 &3779382991387496385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,13 +123,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2001011e3248d774d99f407a57acddee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 500
   healthBar: {fileID: 0}
   _gameoverText: {fileID: 0}
   _restartText: {fileID: 0}
   speed: 20
   speedRot: 30
   forceJump: 350
+  characterRotationSpeed: 0
 --- !u!1001 &6019091652643418411
 PrefabInstance:
   m_ObjectHideFlags: 0
