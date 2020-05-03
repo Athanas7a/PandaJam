@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 120
-  speedDamage: 1.5
+  speedDamage: 0.007
   healthBar: {fileID: 0}
   _gameoverText: {fileID: 0}
   _restartText: {fileID: 0}

@@ -77,7 +77,8 @@ public class PlayerBehaviour : MonoBehaviour
 
             if (healthBar.slider.value > 0)
             {
-                damage += Time.smoothDeltaTime * speedDamage;
+ //               damage += Time.smoothDeltaTime * speedDamage;
+                damage += speedDamage;
                 currentHealth -= damage;
                 healthBar.setHealth(currentHealth);
 
