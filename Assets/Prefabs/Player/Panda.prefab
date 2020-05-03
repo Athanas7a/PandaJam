@@ -139,13 +139,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2001011e3248d774d99f407a57acddee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 500
   healthBar: {fileID: 0}
   _gameoverText: {fileID: 0}
   _restartText: {fileID: 0}
   speed: 20
-  speedRot: 30
+  speedRot: 50
   forceJump: 350
+  characterRotationSpeed: 200
 --- !u!1001 &6019091652643418411
 PrefabInstance:
   m_ObjectHideFlags: 0
