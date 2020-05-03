@@ -143,6 +143,9 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   _gameoverText: {fileID: 0}
   _restartText: {fileID: 0}
+  speed: 20
+  speedRot: 30
+  forceJump: 350
 --- !u!1001 &6019091652643418411
 PrefabInstance:
   m_ObjectHideFlags: 0
