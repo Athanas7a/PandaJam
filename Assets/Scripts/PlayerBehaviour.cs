@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityStandardAssets.Characters.ThirdPerson;
 
@@ -12,7 +13,7 @@ public class PlayerBehaviour : MonoBehaviour
     private float currentHealth;
 
     private float damage = 0;
-    private float speedDamage = 0.01f;
+    public float speedDamage = 0.01f;
     public HealthBar healthBar;
 
     [SerializeField]
@@ -29,6 +30,7 @@ public class PlayerBehaviour : MonoBehaviour
     private Animator animator;
     private bool isGround;
     private bool isVictory;
+    private float timer = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -62,15 +64,35 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void TakeDamage()
     {
-        if (healthBar.slider.value>0)
+        if (!isVictory)
         {
-            damage += Time.smoothDeltaTime * speedDamage;
-            currentHealth -= damage;
-            healthBar.setHealth(currentHealth);
+
+            timer += Time.deltaTime;
+
+            if (timer > 0.1f)
+            {
+                timer = 0;
+                damage = 0;
+            }
+
+            if (healthBar.slider.value > 0)
+            {
+                damage += Time.smoothDeltaTime * speedDamage;
+                currentHealth -= damage;
+                healthBar.setHealth(currentHealth);
+
+            }
         }
     }
     public void AddHealth(int bonusHealth) {
+        
         currentHealth += bonusHealth;
+
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+
         healthBar.setHealth(currentHealth);
     }  
 
@@ -80,8 +102,16 @@ public class PlayerBehaviour : MonoBehaviour
             //gameObject.GetComponent<Animator>().enabled = false;
             GameOverSequence();
             animator.SetBool("Dead", true);
-            print("DEAD");            
+            print("DEAD");
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                SceneManager.LoadScene(0);
+            }
         }
+
+
+
     }
     private void Movement() 
     {
@@ -149,7 +179,19 @@ public class PlayerBehaviour : MonoBehaviour
             if (gameObject.transform.GetChild(0).localRotation.eulerAngles.y < 180)
                 gameObject.transform.GetChild(0).Rotate(Vector3.up * characterRotationSpeed * Time.smoothDeltaTime);
             else
+            {
                 animator.SetBool("Win", true);
+                _restartText.gameObject.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.R))
+                {
+                    SceneManager.LoadScene("Scene01");
+                }
+
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    SceneManager.LoadScene(0);
+                }
+            }
 
             print("Vicrtory");
         }
