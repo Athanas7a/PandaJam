@@ -8,7 +8,7 @@ using UnityStandardAssets.Characters.ThirdPerson;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    public int maxHealth = 100;
+    public int maxHealth = 500;
     private float currentHealth;
 
     private float damage = 0;
