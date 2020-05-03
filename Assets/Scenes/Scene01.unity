@@ -190,12 +190,28 @@ PrefabInstance:
     - target: {fileID: 929722714156767097, guid: 8adb433e9580e464bae80763fdff6473,
         type: 3}
       propertyPath: maxHealth
-      value: 500
+      value: 1000000000
       objectReference: {fileID: 0}
     - target: {fileID: 3779382991387496385, guid: 8adb433e9580e464bae80763fdff6473,
         type: 3}
       propertyPath: bonusHealth
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4631068993979016973, guid: 8adb433e9580e464bae80763fdff6473,
+        type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandIndex1'\n\tTransform 'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform
+        'mixamorig:RightArm'\n\tTransform 'mixamorig:LeftLeg'\n\tTransform 'mixamorig:LeftShoulder'\n\tTransform
+        'mixamorig:RightHandIndex3'\n\tTransform 'mixamorig:RightFoot'\n\tand more
+        ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4631068993983152155, guid: 8adb433e9580e464bae80763fdff6473,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4631068993986331723, guid: 8adb433e9580e464bae80763fdff6473,
         type: 3}
@@ -210,7 +226,7 @@ PrefabInstance:
     - target: {fileID: 4631068993986621903, guid: 8adb433e9580e464bae80763fdff6473,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.078
       objectReference: {fileID: 0}
     - target: {fileID: 4631068993986621903, guid: 8adb433e9580e464bae80763fdff6473,
         type: 3}
@@ -951,6 +967,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504344739295113799, guid: 20f8c58d7a8131542af572a9818a7cb1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1504344739295113816, guid: 20f8c58d7a8131542af572a9818a7cb1,
         type: 3}

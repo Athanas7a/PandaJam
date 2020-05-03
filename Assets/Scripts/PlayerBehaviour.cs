@@ -51,6 +51,12 @@ public class PlayerBehaviour : MonoBehaviour
         Dead();
 
         GameVictory();
+
+       // if (Input.GetKeyDown(KeyCode.P))
+        //{
+           // animator.SetBool("Win", true);
+       // }
+
     }
 
     private void TakeDamage()
@@ -70,14 +76,15 @@ public class PlayerBehaviour : MonoBehaviour
     private void Dead() {
         if (healthBar.slider.value <= 0)
         {
-            gameObject.GetComponent<Animator>().enabled = false;
+            //gameObject.GetComponent<Animator>().enabled = false;
             GameOverSequence();
+            animator.SetBool("Dead", true);
             print("DEAD");            
         }
     }
     private void Movement() 
     {
-        if (Input.GetKey(KeyCode.UpArrow) && healthBar.slider.value > 0.1f)
+        if (Input.GetKey(KeyCode.UpArrow) && healthBar.slider.value > 0.1f && !isVictory )
         {
             transform.Translate(Vector3.forward * speed * Time.smoothDeltaTime);
             animator.SetBool("Run", true);
@@ -105,6 +112,12 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("ground"))
             isGround = true;
+        
+    }
+
+    public void OnTriggerEnter(Collider collision)
+    {
+        
         if (collision.gameObject.tag.Equals("Goal"))
             isVictory = true;
     }
@@ -125,8 +138,15 @@ public class PlayerBehaviour : MonoBehaviour
     private void GameVictory()
     {
         if (isVictory == true)
-        { 
-
+        {
+            if (gameObject.transform.GetChild(0).rotation.y <= 0.5f)
+            {
+                print("Rotation");
+                gameObject.transform.GetChild(0).Rotate(Vector3.up * 10);
+            }
+                
+            animator.SetBool("Win", true);
+            print("Vicrtory");
         }
     }
 
