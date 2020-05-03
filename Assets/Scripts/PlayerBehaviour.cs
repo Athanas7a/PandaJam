@@ -24,6 +24,7 @@ public class PlayerBehaviour : MonoBehaviour
     public float speed;
     public float speedRot;
     public float forceJump;
+    public float characterRotationSpeed;
 
     private Animator animator;
     private bool isGround;
@@ -139,13 +140,17 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (isVictory == true)
         {
-            if (gameObject.transform.GetChild(0).rotation.y <= 0.5f)
-            {
-                print("Rotation");
-                gameObject.transform.GetChild(0).Rotate(Vector3.up * 10);
-            }
-                
-            animator.SetBool("Win", true);
+            //if (gameObject.transform.GetChild(0).rotation.y <= 0.5f)
+            //{
+            //    print("Rotation");
+            //    gameObject.transform.GetChild(0).Rotate(Vector3.up * 10);
+            //}
+
+            if (gameObject.transform.GetChild(0).localRotation.eulerAngles.y < 180)
+                gameObject.transform.GetChild(0).Rotate(Vector3.up * characterRotationSpeed * Time.smoothDeltaTime);
+            else
+                animator.SetBool("Win", true);
+
             print("Vicrtory");
         }
     }
