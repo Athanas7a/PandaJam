@@ -27,6 +27,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     private Animator animator;
     private bool isGround;
+    private bool isVictory;
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +49,8 @@ public class PlayerBehaviour : MonoBehaviour
         TakeDamage();
 
         Dead();
+
+        GameVictory();
     }
 
     private void TakeDamage()
@@ -102,6 +105,8 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("ground"))
             isGround = true;
+        if (collision.gameObject.tag.Equals("Goal"))
+            isVictory = true;
     }
 
     public void OnCollisionExit(Collision collision)
@@ -115,6 +120,14 @@ public class PlayerBehaviour : MonoBehaviour
         GameObject.Find("GameManager").GetComponent<GameManager>().GameOver();
         _gameoverText.gameObject.SetActive(true);
         _restartText.gameObject.SetActive(true);
+    }
+
+    private void GameVictory()
+    {
+        if (isVictory == true)
+        { 
+
+        }
     }
 
 }
