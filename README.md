@@ -11,7 +11,8 @@ Have fun!
 <br/>
 #### Play with keys: 
 
-Arrow Up : Move forword
+Arrow Up : Move forward
+
 Arrow Right: Return right
 
 Arrow Left: Return left
