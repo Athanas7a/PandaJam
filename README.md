@@ -1,11 +1,29 @@
 # PandaJam
 
-Play our game to save a panda!
-https://artanasia.github.io/PandaJam/index.html
+A panda running away from a virus! Take it to the Victory point to save it! Don't forget to much your bamboo! ;-)
+<br/>
+<br/>
+#### Play with keys: 
 
-https://artanasia.itch.io/pandamic-runner
+Arrow Up : Move forword
+Arrow Right: Return right
 
-Credits:
+Arrow Left: Return left
+
+Space : Jump
+<br/>
+<br/>
+Game developed by 4 strangers during The Panda-mic Game Jam, 1-3 May 2020.
+Have fun!
+
+#### Play our game to save a panda!
+
+[Play Here](https://artanasia.github.io/PandaJam/index.html) 
+
+[Itch.io Here](https://artanasia.itch.io/pandamic-runner)
+<br/>
+<br/>
+#### Credits:
 
 [ni-kara](https://github.com/ni-kara) 
 
